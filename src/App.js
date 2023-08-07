@@ -1,12 +1,15 @@
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/main/Main";
 
-import './App.css';
-import Main from './components/main/Main';
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <BrowserRouter>
+      <div className="container fluid">
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 

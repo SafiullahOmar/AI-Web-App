@@ -1,13 +1,14 @@
 .searchContainer{
-  margin-top: 300px;
+  margin-top: 3rem;
   height: 100vh;
-  min-height: 800px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100%;  
   max-width: 1600px;
+  border: 1px solid red;
 }
 
 .topSearchContainer{

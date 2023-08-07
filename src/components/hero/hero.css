@@ -1,24 +1,28 @@
-.heroContainer{
+/* Default styling */
+.heroContainer {
   width: 100%;
-  height: 400px;
+  max-height: 30rem;
   background-color: white;
-  margin-top: -2%;
+  margin-top: 0;
   z-index: 10;
   position: relative;
   display: flex;
-
+  justify-content:space-around;
+  right:0rem;
+  border: 1px solid red;
 }
 
-.heroLeftContainer{
+.heroLeftContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 7rem 0;
+  margin-left: 1rem;
   width: 50%;
 }
 
-.heroLeftTop{
+.heroLeftTop {
   line-height: 0;
 }
 
@@ -26,26 +30,33 @@
   font-size: 12px;
   color: rgb(214, 117, 133);
 }
+.semiCiclr1{
 
-.heroLeftTop H1{
-  font-size: 60PX;
+  position : absolute;
+  top:-7rem;
+  left: -10rem;
+  width:50%;
+  height: 15%;
+}
+.heroLeftTop h1 {
+  font-size: 50px;
 }
 
-.heroLeftTop .bottomTitle{
-  font-size: 34px;
-  padding-top: 10px;
+.heroLeftTop .bottomTitle {
+  font-size: 28px;
+  padding-top: 1rem;
 }
 
 .heroLeftBottom {
-  padding-bottom: 50px;
-
+  padding-bottom: 20rem;
 }
+
 .heroLeftBottom p {
   color: gray;
   font-size: 14px;
 }
 
-.heroLeftBottom button{
+.heroLeftBottom button {
   height: 2.6rem;
   width: 8.5rem;
   background: rgb(197, 90, 108);
@@ -55,23 +66,22 @@
   cursor: pointer;
 }
 
-
-
-
-.heroRightContainer{
+.heroRightContainer {
   position: relative;
-  width: 50%;
+  width: 40%;
+  margin-top:100px !important;
+  margin-right: -0rem;
+  
 }
 
-.heroRightContainer .dataLabel{
-  width: 300px;
+.heroRightContainer .dataLabel {
+  max-width: 300px;
   height: 160px;
   background: #a2d3d061;
   border-radius: 15px;
   position: absolute;
   top: -2rem;
-  right: 4.5rem;
-
+  right: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -91,53 +101,58 @@
 .dataLabel .leftSide .percentage {
   display: flex;
   align-items: center;
-  
 }
 
 .dataLabel .leftSide .RevPer {
   color: red;
 }
 
-.dataLabel .barChart{
+.dataLabel .barChart {
   width: 60%;
 }
 
-.heroRightContainer .rightContainerPic{
+.heroRightContainer .rightContainerPic {
   position: absolute;
   top: -2rem;
-  right: 24rem;
+  right: 21rem;
   max-width: 180px;
   width: 140px;
   height: 160px;
 }
 
-.heroRightContainer .rightContainerPic img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-
-}
-
-
-.heroRightContainer .rightContainerPic2{
-  width: 200px;
-  height: 220px;
-
-  position: absolute;
-  top: 8rem;
-  right: 4.5rem;
-}
-
-.heroRightContainer .rightContainerPic2 img{
+.heroRightContainer .rightContainerPic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.heroRightContainer .progressMeter{
+.heroRightContainer .rightContainerPic2 {
+  width: 190px;
+  height: 180px;
   position: absolute;
   top: 9rem;
-  right: 18rem;
+  right: 1.5rem;
 }
+
+.heroRightContainer .rightContainerPic2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.heroRightContainer .img2 {
+  
+  position: relative;
+  top: 23rem;
+  width: 60%;
+  right: -11rem;
+}
+
+.heroRightContainer .progressMeter {
+  position: absolute;
+  top: 9rem;
+  right: 15rem;
+}
+

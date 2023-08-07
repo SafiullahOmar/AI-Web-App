@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./providers.css"
-import Slider from '../Slider/Slider';
+import Slider2 from '../Slider/Slider';
 
 
 function Providers() {
@@ -13,7 +13,7 @@ function Providers() {
       </div>
 
       <div className='sliderContainer'>
-        <Slider/>
+        <Slider2/>
       </div>
     </div>
   )

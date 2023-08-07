@@ -5,8 +5,8 @@
 
 
 .profilePicContainer img{
-width: 220px;
-height: 120px;
+width: 13rem;
+height: 8rem;
 object-fit: cover;
 border-radius: 15px;
 }

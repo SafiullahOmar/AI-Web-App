@@ -1,12 +1,13 @@
 .latestWrapper{
-  width: 80%;
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
   z-index:  10;
-  background-color: whitesmoke;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  /* background-color: whitesmoke; */
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  
 }
 .topContainer h1 {
   font-size: 36px;

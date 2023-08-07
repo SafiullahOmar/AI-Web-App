@@ -3,6 +3,7 @@ import "./footer.css"
 import {BiSearchAlt} from "react-icons/bi"
 import {AiOutlineMail} from "react-icons/ai"
 import SemiCircle from '../semiCircle/SemiCircle'
+import img  from '../../assets/green.png';
 
 
 function Footer() {
@@ -34,9 +35,10 @@ function Footer() {
         </div>
       </div>
       <div className='greenSemiCircle'>
-        <SemiCircle circleType="footerCircle"/>
+        {/* <SemiCircle circleType="footerCircle"/> */}
+        <image src={img} alt="green"/>
       </div>
-      <div className='circleCover'></div>
+      {/*<div className='circleCover'></div>*/}
     </div>
   )
 }

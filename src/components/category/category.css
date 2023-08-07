@@ -1,6 +1,6 @@
 .categoryContainer{
-  width: 280px;
-  max-width: 280px;
+  width: 240px;
+  max-width: 240px;
   height: 130px;
   border: 1px solid rgb(230, 227, 227);
   border-radius: 10px;
@@ -45,7 +45,7 @@
 }
 
 .textContainer .titleText span{
-  font-size: 12px;
+  font-size: 9px;
   padding-bottom: 5px;
 }
 

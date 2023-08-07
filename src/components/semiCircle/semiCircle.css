@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 1;
   height: 240px;
-  width: 300px;
+  max-width: 300px;
   border-width: 10px;
   border-radius: 50%;
   border-color: pink;
@@ -34,15 +34,18 @@
 
 .footerCircle {
     position: absolute;
-    width: 100%;
     z-index: 0.51;
-    top: -10rem;
-    right: -10rem;
-    height: 300px;
-    width: 300px;
-    border-width: 10px;
-    border-radius: 50%;
-    border-color: rgb(133, 201, 17);
+    top: 3rem;
+    right: -10.7rem;
+    height: 180px;
+    width: 180px;
+    border-width: 8rem;
+    border-bottom: rgb(133, 201, 17);
     border-style: solid;
+    border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-radius: 100px;
+  transform: rotate(40deg);
     /* border-bottom: 0; */
 }

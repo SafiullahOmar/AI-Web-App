@@ -17,16 +17,17 @@ function Main() {
   return (
     <div className='topMain'>
       <div className='main'>
+      
         <Header />
-        <SemiCircle circleType="topCircle"/>
+       { /*  <SemiCircle circleType="topCircle"/> */}
         <Hero/>
-        <SemiCircle circleType="bottomCircle"/>
+        {/*<SemiCircle  circleType="bottomCircle"/>*/}
         <Categories/>
         <Search/>
         <Providers/>
-      </div>
-      <div className='footer'>
         <Latest />
+      </div>
+      <div className='footer'>        
         <Footer/>
         <BottomFooter/>
       </div>
