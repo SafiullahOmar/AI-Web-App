@@ -1,76 +1,41 @@
-import React ,{useRef} from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { Bar } from "react-chartjs-2";
 
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
+
 function Header() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
-  };
-
-  const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
+  
   return (
-    <div className="header">
-      <div className="container">
-        <div className="logo">Logo</div>
+    <Navbar expand="lg" className="bg-body-tertiary">
+    <Container>
+      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto nav-links">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">Service</Nav.Link>
+          <Nav.Link href="#link">Software</Nav.Link>
+          <Nav.Link href="#link">AI</Nav.Link>
+          <Nav.Link href="#link">Blog</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
 
-        <div className="contents">
-         
-            <ul className={toggleMenu?"" : "nav-links"}>
-              <Link to="/" className="home">
-                <li>Home</li>
-              </Link>
-              <Link to="/software" className="software">
-                <li>Software</li>
-              </Link>
-              <Link to="/Services" className="Services">
-                <li>Services</li>
-              </Link>
-              <Link to="/Learning" className="Learning">
-                <li>Learning</li>
-              </Link>
-              
-            </ul>
-            
-          
-
-          
-
-          {/*  <p>Home</p>
-        <NavLink style={{textDecoration: "none", listStyle: "none"}} to="/categories">
-          <p>Interactive AI</p>
-        </NavLink>
-        <p>Software</p>
-        <p>Services</p>
-        <p>Learning</p>
-        <p>Blog</p>
-  */}
-        </div>
-
-        <button
-				className="nav-btn">
-				<FontAwesomeIcon icon={faBars}
-        onClick={()=>{setToggleMenu(!toggleMenu)}}
-        ></FontAwesomeIcon></button>
-
-        <div className="subscribeButton">
-          <button>Subscribe</button>
-        </div>
-      </div>
+      <div className="subscribeButton">
+      <button>Subscribe</button>
     </div>
+    </Container>
+  </Navbar>
   );
 }
 

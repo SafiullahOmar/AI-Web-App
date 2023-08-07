@@ -11,7 +11,7 @@ function Hero() {
   const data = [100, 200, 150, 300, 250];
   return (
     <>
-      <div>
+      
         <div className="heroContainer">
           <div className="heroLeftContainer">
             <div >
@@ -66,7 +66,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }
