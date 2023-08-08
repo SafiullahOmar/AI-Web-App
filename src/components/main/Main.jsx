@@ -12,10 +12,12 @@ import Footer from '../footer/Footer'
 import BottomFooter from '../bottomFooter/BottomFooter'
 
 
+
+
 function Main() {
 
   return (
-    <div className='topMain'>
+    <div className='topMain11'>
       <div className='main'>
       
         <Header />

@@ -1,18 +1,21 @@
-body{
+ body{
   display: grid;
   place-items: center;
+  margin: 0 auto;
 
 }
 
 .main{ 
 
 border:1px solid red;
-  /* padding-left:2rem; */
+padding-left:0rem; 
 margin: 0 auto;
 max-width: 90vw;
-  /* box-shadow:5px 5px 25px 5px rgba(126, 125, 125, 0.3); */
+   box-shadow:5px 5px 25px 5px rgba(126, 125, 125, 0.3); 
 
-}
+} 
+
+
 
 .footer {
   /* background: whitesmoke; */

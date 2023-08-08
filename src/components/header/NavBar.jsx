@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.css";
+import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Logo
+            CodeBucks
+            <i className="fas fa-code"></i>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -63,10 +63,9 @@ function Header() {
               </NavLink>
             </li>
           </ul>
-          
           <div className="nav-icon" onClick={handleClick}>
             {" "}
-            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+            click
             <i
               className={
                 click ? (
@@ -77,13 +76,10 @@ function Header() {
               }
             ></i>
           </div>
-          <div className="subscribeButton">
-            <button>Subscribe</button>
-          </div>
         </div>
       </nav>
     </>
   );
 }
 
-export default Header;
+export default NavBar;

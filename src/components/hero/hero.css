@@ -1,12 +1,13 @@
-/* Default styling */
+/* Default styling
 .heroContainer {
   width: 100%;
   max-height: 30rem;
   background-color: white;
   margin-top: 0;
-  z-index: 10;
+
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content:space-around;
   right:0rem;
   border: 1px solid red;
@@ -154,5 +155,133 @@
   position: absolute;
   top: 9rem;
   right: 15rem;
+} */
+
+@media screen and (max-width: 600px) {
+/* Default styling */
+.heroContainer {
+  width: 100%;
+  background-color: teal;
+  margin-top: 0;
+  height: 100%;
+  max-height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  border: 1px solid red;
 }
 
+.heroLeftContainer {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+  padding: 7rem 0;
+  /* margin-left: 1rem; */
+  margin-top: 18rem;
+  width: 100%;
+
+  background: teal;
+}
+
+.heroLeftTop {
+  line-height: 0;
+}
+
+.heroLeftTop .topTitle {
+  font-size: 12px;
+  color: rgb(214, 117, 133);
+}
+.semiCiclr1{
+
+  position : absolute;
+  top:-7rem;
+  left: -10rem;
+  width:50%;
+  height: 15%;
+}
+.heroLeftTop h1 {
+  font-size: 50px;
+}
+
+.heroLeftTop .bottomTitle {
+  font-size: 28px;
+  padding-top: 1rem;
+}
+
+.heroLeftBottom {
+  padding-bottom: 20rem;
+}
+
+.heroLeftBottom p {
+  color: gray;
+  font-size: 14px;
+}
+
+.heroLeftBottom button {
+  height: 2.6rem;
+  width: 8.5rem;
+  background: rgb(197, 90, 108);
+  color: white;
+  border: none !important;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.heroRightContainer {
+
+}
+
+.heroRightContainer .dataLabel {
+
+}
+
+.dataLabel .leftSide {
+
+}
+
+.dataLabel .leftSide .Rev {
+
+}
+
+.dataLabel .leftSide .percentage {
+
+}
+
+.dataLabel .leftSide .RevPer {
+  color: red;
+}
+
+.dataLabel .barChart {
+
+}
+
+.heroRightContainer .rightContainerPic {
+width: 50px;
+height: 80px;
+
+}
+
+.heroRightContainer .rightContainerPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.heroRightContainer .rightContainerPic2 img {
+
+}
+
+.heroRightContainer .img2 {
+
+}
+
+.heroRightContainer .progressMeter {
+
+}
+
+}
